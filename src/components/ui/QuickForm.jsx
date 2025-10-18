@@ -52,7 +52,7 @@ export default function QuickForm() {
             value={formData.make}
             onChange={handleChange}
             required
-            className="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
+            className="px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
           />
           <input
             type="text"
@@ -61,7 +61,7 @@ export default function QuickForm() {
             value={formData.model}
             onChange={handleChange}
             required
-            className="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
+            className="px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
           />
         </div>
 
@@ -76,7 +76,7 @@ export default function QuickForm() {
             required
             min="1990"
             max={new Date().getFullYear() + 1}
-            className="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
+            className="px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
           />
           <input
             type="text"
@@ -85,7 +85,7 @@ export default function QuickForm() {
             value={formData.mileage}
             onChange={handleChange}
             required
-            className="px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
+            className="px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
           />
         </div>
 
@@ -98,7 +98,7 @@ export default function QuickForm() {
           onChange={handleChange}
           required
           pattern="[0-9]{9,}"
-          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
+          className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
         />
 
         {/* Upload zdjęć */}
