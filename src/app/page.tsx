@@ -4,6 +4,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import WhyUsSection from "@/components/sections/WhyUsSection";
 import RecentCarsSection from "@/components/sections/RecentCarsSection";
 import FAQSection from "@/components/sections/FAQSection";
+import ContactSection from "@/components/sections/ContactSection";
 
 export default function Home() {
   return (
@@ -18,14 +19,7 @@ export default function Home() {
 
       <FAQSection />
 
-      <section id="kontakt" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Kontakt</h2>
-          <p className="text-xl text-gray-600">
-            Sekcja w budowie - dodamy za chwilę
-          </p>
-        </div>
-      </section>
+      <ContactSection />
 
       <Footer />
     </main>
