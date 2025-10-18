@@ -14,6 +14,7 @@ const iconMap = {
 
 export default function WhyUsSection() {
   const [headerRef, headerVisible] = useScrollAnimation({ once: true });
+  const [cardRef, cardVisible] = useScrollAnimation({ once: true });
 
   return (
     <section className="py-20 bg-white">
@@ -40,8 +41,6 @@ export default function WhyUsSection() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {whyUsFeatures.map((feature, index) => {
             const Icon = iconMap[feature.icon];
-            const [cardRef, cardVisible] = useScrollAnimation({ once: true });
-
             return (
               <div
                 key={feature.id}

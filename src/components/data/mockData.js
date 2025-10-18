@@ -223,7 +223,7 @@ export const testimonials = [
     id: 1,
     name: "Katarzyna Mrozicka",
     location: "Gdynia",
-    text: "Auto-Bart skupił mój samochód za całkiem dobrą cenę, mimo wyraźnych uszkodzeń i nieważnego OC. Polecam!",
+    text: "”Auto-Bart skupił mój samochód za całkiem dobrą cenę, mimo wyraźnych uszkodzeń i nieważnego OC. Polecam!”",
     rating: 5,
     avatar:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
@@ -232,7 +232,7 @@ export const testimonials = [
     id: 2,
     name: "Marcin Korsarz",
     location: "Gdańsk",
-    text: "Zadzwoniłem. Przyjechali w ciągu 2 godzin. Obsługa profesjonalna i rzeczowa. Cena, jaką wynegocjowałem za swojego Yarisa satysfakcjonująca, a podpisanie umowy trwało około 20 minut. Bardzo sprawnie przeprowadzona transakcja.",
+    text: "”Zadzwoniłem. Przyjechali w ciągu 2 godzin. Obsługa profesjonalna i rzeczowa. Cena, jaką wynegocjowałem za swojego Yarisa satysfakcjonująca, a podpisanie umowy trwało około 20 minut. Bardzo sprawnie przeprowadzona transakcja.”",
     rating: 5,
     avatar:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
@@ -241,7 +241,7 @@ export const testimonials = [
     id: 3,
     name: "Łukasz Fijał",
     location: "Gdynia",
-    text: "Mieliśmy do sprzedania kilkanaście samochodów poleasingowych z firmy. Kwota, jaką otrzymaliśmy niezwykle korzystna. Transakcja sfinalizowana sprawnie i błyskawicznie!",
+    text: "”Mieliśmy do sprzedania kilkanaście samochodów poleasingowych z firmy. Kwota, jaką otrzymaliśmy niezwykle korzystna. Transakcja sfinalizowana sprawnie i błyskawicznie!”",
     rating: 5,
     avatar:
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",

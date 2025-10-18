@@ -1,6 +1,7 @@
 "use client";
 
 import { Star, Quote } from "lucide-react";
+import Image from "next/image";
 import { testimonials } from "../data/mockData";
 
 export default function TestimonialsSection() {
@@ -41,15 +42,17 @@ export default function TestimonialsSection() {
 
               {/* Text */}
               <p className="text-gray-700 leading-relaxed mb-6 relative z-10">
-                "{testimonial.text}"
+                {testimonial.text}
               </p>
 
               {/* Author */}
               <div className="flex items-center space-x-4 pt-4 border-t border-gray-200">
-                <img
+                <Image
                   src={testimonial.avatar}
                   alt={testimonial.name}
                   className="w-12 h-12 rounded-full object-cover border-2 border-blue-200"
+                  width={48}
+                  height={48}
                 />
                 <div>
                   <p className="font-semibold text-gray-900">
