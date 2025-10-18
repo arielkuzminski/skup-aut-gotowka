@@ -3,9 +3,15 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { faqs } from "../data/mockData";
+import { useScrollAnimation } from "@/lib/useScrollAnimation";
 
 export default function FAQSection() {
   const [openFaq, setOpenFaq] = useState(null);
+  const [headerRef, headerVisible] = useScrollAnimation({ once: true });
+  const [faqsRef, faqsVisible] = useScrollAnimation({
+    once: true,
+    threshold: 0.05,
+  });
 
   const toggleFaq = (id) => {
     setOpenFaq(openFaq === id ? null : id);
@@ -15,7 +21,14 @@ export default function FAQSection() {
     <section id="faq" className="py-20 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div
+          ref={headerRef}
+          className={`text-center mb-16 transition-all duration-700 ${
+            headerVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-10"
+          }`}
+        >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Najczęściej zadawane pytania
           </h2>
@@ -25,14 +38,21 @@ export default function FAQSection() {
         </div>
 
         {/* FAQ Accordion */}
-        <div className="space-y-4">
-          {faqs.map((faq) => {
+        <div ref={faqsRef} className="space-y-4">
+          {faqs.map((faq, index) => {
             const isOpen = openFaq === faq.id;
 
             return (
               <div
                 key={faq.id}
-                className="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden transition-all duration-300 hover:shadow-lg"
+                className={`bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden transition-all duration-700 hover:shadow-lg ${
+                  faqsVisible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-10"
+                }`}
+                style={{
+                  transitionDelay: faqsVisible ? `${index * 80}ms` : "0ms",
+                }}
               >
                 {/* Question Button */}
                 <button
@@ -65,7 +85,13 @@ export default function FAQSection() {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-12">
+        <div
+          className={`text-center mt-12 transition-all duration-700 delay-500 ${
+            faqsVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-10"
+          }`}
+        >
           <p className="text-gray-600 mb-4">
             Nie znalazłeś odpowiedzi na swoje pytanie?
           </p>
