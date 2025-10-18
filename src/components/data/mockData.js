@@ -39,7 +39,7 @@ export const recentCars = [
     description:
       "Granatowy hatchback wyposażony w niezawodny i ekonomiczny silnik 1.6 TDI. Dzięki połączeniu kolorystycznemu oraz typu nadwozia, samochód prezentuje się wyjątkowo elegancko. VW Polo 2011 to idealny wybór zarówno do codziennej jazdy po mieście, jak i na dłuższe trasy.",
     image:
-      "https://images.unsplash.com/photo-1583267746897-1171454c222e?w=800&q=80",
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&q=80",
     location: "Luzino",
     slug: "volkswagen-polo-2011-luzino",
   },
@@ -95,7 +95,7 @@ export const recentCars = [
     description:
       "Auto wyposażone jest w silnik benzynowy o pojemności 1.8 oraz w pełni sprawną instalację gazową. Dodatkowo samochód posiada podgrzewane fotele, elektryczne lusterka oraz działający układ klimatyzacyjny.",
     image:
-      "https://images.unsplash.com/photo-1552519507-370a1ad8f969?w=800&q=80",
+      "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=800&q=80",
     location: "Bydgoszcz",
     slug: "ford-focus-2007-bydgoszcz",
   },
